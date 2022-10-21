@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spruceapp/static/css/main.91142457.chunk.css",
+    "main.js": "/spruceapp/static/js/main.5e01c98b.chunk.js",
+    "main.js.map": "/spruceapp/static/js/main.5e01c98b.chunk.js.map",
+    "runtime-main.js": "/spruceapp/static/js/runtime-main.7c3b8c91.js",
+    "runtime-main.js.map": "/spruceapp/static/js/runtime-main.7c3b8c91.js.map",
+    "static/js/2.1e37a007.chunk.js": "/spruceapp/static/js/2.1e37a007.chunk.js",
+    "static/js/2.1e37a007.chunk.js.map": "/spruceapp/static/js/2.1e37a007.chunk.js.map",
+    "static/js/3.89b3fca0.chunk.js": "/spruceapp/static/js/3.89b3fca0.chunk.js",
+    "static/js/3.89b3fca0.chunk.js.map": "/spruceapp/static/js/3.89b3fca0.chunk.js.map",
+    "index.html": "/spruceapp/index.html",
+    "static/css/main.91142457.chunk.css.map": "/spruceapp/static/css/main.91142457.chunk.css.map",
+    "static/js/2.1e37a007.chunk.js.LICENSE.txt": "/spruceapp/static/js/2.1e37a007.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c3b8c91.js",
+    "static/js/2.1e37a007.chunk.js",
+    "static/css/main.91142457.chunk.css",
+    "static/js/main.5e01c98b.chunk.js"
+  ]
+}
