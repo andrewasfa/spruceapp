@@ -2,6 +2,7 @@ import logo from "./spruceApp-logo.png";
 import { useState, useEffect } from "react";
 import "./App.css";
 import { baseUrl } from "./config";
+import Tabs from "./components/TabComponent/Tabs";
 
 var {SyncClient} = require("twilio-sync");
 
@@ -88,35 +89,7 @@ function App() {
     return data.token; 
   }
 
-  async function createExpense(sc){
-    
-    let expense = { 
-        amount: parseFloat(document.getElementById('amount').value),
-        description: document.getElementById('description').value 
-      };
 
-    console.log('sending this', expense);
-    const res = await fetch(
-      `${baseUrl}/handleOutgoing`,
-      {
-        method: "POST",
-        body: JSON.stringify(expense),
-        headers: {
-          'Content-Type': 'application/json'
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      });
-    const data = await res.json();
-    console.log(data);
-    setMessage(`${ data.response} - Total of ${data.entries.length} notified`);
-    if (data.response && data.response == 'updated'){
-      console.log('success');
-      document.getElementById('amount').value = '';
-      document.getElementById('description').value = '';
-    }
-    return data
-
-  }
 
   function showDonation(i){
     console.log(i);
@@ -184,14 +157,11 @@ function App() {
         </div>
         <CurrentExpense data={currentExpense}/>
        </div>
-        <div className="expense-form">
-        <h1>Create expense</h1>
-          <input id='amount' className="expense-field" min="10" type="number" placeholder="Amount"></input>
-          <textarea id='description' className="expense-field"  type="text" placeholder="Description"></textarea>
-          <button onClick={(syncClient)=>{createExpense(syncClient)}}>Submit</button>
-          <h2>{message}</h2>
-        </div>
+
+       <Tabs/>
+
         
+        <button onClick={()=>this.methodDoesNotExist}>Special button</button>
 
       </header>
     </div>
